@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  ECOCOS1
+
+  Created by Tetsuya YAMANE on 2015/12/25.
+  Copyright © 2015年 NPO法人情熱の赤いバラ協会. All rights reserved.
+*/
+"navigationBack"="戻る";
+"communicationWarnMessage"="BAD Wi-Fi?\nNow starting Safari..";
+"communicationWarnButtonLabel"="OK";
+"notificationButtonLabel"="OK";
