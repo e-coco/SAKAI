@@ -1,7 +1,7 @@
 //
 //
 //  Modified by YAMANE on 2015/08/20.
-//  Created by 伊藤　誠 on 2015/06/08.
+//  Created by 伊藤　誠 on 2015/06/08..
 //  Copyright (c) 2015年 NPO法人 情熱の赤いバラ協会. All rights reserved.
 //
 import CoreLocation
