@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "75B267991B2BDE12007022F8"
-            BuildableName = "ECOCOR2.app"
-            BlueprintName = "ECOCOR2"
-            ReferencedContainer = "container:ECOCOR2.xcodeproj">
+            BuildableName = "ECOCOS1.app"
+            BlueprintName = "ECOCOS1"
+            ReferencedContainer = "container:ECOCOS1.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "75B267991B2BDE12007022F8"
-            BuildableName = "ECOCOR2.app"
-            BlueprintName = "ECOCOR2"
-            ReferencedContainer = "container:ECOCOR2.xcodeproj">
+            BuildableName = "ECOCOS1.app"
+            BlueprintName = "ECOCOS1"
+            ReferencedContainer = "container:ECOCOS1.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>

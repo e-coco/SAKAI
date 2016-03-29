@@ -274,7 +274,7 @@ class FirstViewController: X0402ViewController, CLLocationManagerDelegate, NSXML
      **/
     private func _getAlertController(message: String) -> UIAlertController {
         let style: UIAlertControllerStyle    =  UIAlertControllerStyle.Alert
-        let controller: UIAlertController    =  UIAlertController(title: "", message: message, preferredStyle: style)
+        let controller: UIAlertController    =  UIAlertController(title: "スタンプされました", message: message, preferredStyle: style)
         let view: UIView                     = controller.view
         let mainScreen: UIScreen             =  UIScreen.mainScreen()
         view.frame                           =  mainScreen.applicationFrame
@@ -337,8 +337,12 @@ class FirstViewController: X0402ViewController, CLLocationManagerDelegate, NSXML
      **/
     private func _listenStamp(data: NSData?, urlResponse: NSURLResponse?, error: NSError?) {
         if nil                          ==  error {
-            let result: NSString?        =  NSString(data: data!, encoding: NSUTF8StringEncoding)
-            print("_listenStamp/result: \(result)")
+            let result: String?        = String(data: data!, encoding: NSUTF8StringEncoding)
+            print("_listenStamp/result: \(result!)")
+            
+            if(result != "NG" && result!.characters.count <= 64){
+            _popDialog(result!)
+            }
             let parser: NSXMLParser?     =  NSXMLParser(data: data!)
             if nil                      ==  parser {// < パース失敗
                 print("failed to parse XML")
@@ -696,7 +700,6 @@ class FirstViewController: X0402ViewController, CLLocationManagerDelegate, NSXML
             spotWindow.frame         =  CGRectMake(0, height, width, 0)
             spotView.frame           =  CGRect(x: 10, y: 10, width: width - 20, height: 80)
         }
-        
         UIView.animateWithDuration(0.3, animations: _animateOff)
     }
     
@@ -820,7 +823,6 @@ class FirstViewController: X0402ViewController, CLLocationManagerDelegate, NSXML
         _frameGroundView(groundView)
         _loadGround(OwnClass.groundTopTerms)
     }
-    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         print("viewDidAppear(\(animated))")
